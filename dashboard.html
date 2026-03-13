@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — CropNet AI</title>
+  <meta name="description" content="CropNet AI live farm analytics dashboard — soil health, disease detection, yield prediction, and weather insights.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🌿</div>
+      CropNet <span>AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="technology.html">Technology</a></li>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <span style="font-size: 0.82rem; color: var(--text-muted);" id="dash-clock">--:--</span>
+      <button class="btn btn-secondary btn-sm" id="refresh-btn" style="cursor: pointer;">⟳ Refresh</button>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<nav class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="technology.html">Technology</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- DASHBOARD LAYOUT -->
+<div style="padding: calc(var(--nav-h) + 20px) 0 40px; position: relative; z-index: 1;">
+  <div class="container">
+
+    <!-- Dashboard Header -->
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        <div class="section-label" style="margin-bottom: 0.5rem;">Farm Analytics</div>
+        <h2 style="font-size: 1.8rem;">My Farm Dashboard</h2>
+        <p style="font-size: 0.85rem; margin: 0;">Ramesh Kumar's Farm · Punjab · 12 Acres</p>
+      </div>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <span class="mockup-tag tag-green" style="padding: 8px 16px; font-size: 0.78rem;">🟢 All Systems Operational</span>
+        <span class="mockup-tag tag-gold" style="padding: 8px 16px; font-size: 0.78rem;">⚠️ 1 Irrigation Alert</span>
+      </div>
+    </div>
+
+    <div class="dashboard-layout">
+
+      <!-- SIDEBAR -->
+      <div class="dash-sidebar">
+        <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 0.75rem;">Navigation</div>
+        <a class="dash-nav-link active" data-section="overview">📊 Overview</a>
+        <a class="dash-nav-link" data-section="soil">🧪 Soil Analysis</a>
+        <a class="dash-nav-link" data-section="disease">🔬 Disease Detection</a>
+        <a class="dash-nav-link" data-section="yield">📈 Yield Prediction</a>
+        <a class="dash-nav-link" data-section="weather">⛅ Weather</a>
+
+        <div class="dash-nav-label">Quick Stats</div>
+
+        <div style="background: rgba(39,174,96,0.06); border: 1px solid rgba(39,174,96,0.15); border-radius: 12px; padding: 14px; margin-bottom: 10px;">
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 4px;">Current Season</div>
+          <div style="font-size: 1rem; font-weight: 600; color: var(--green-200);">Rabi 2024–25</div>
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 2px;">Wheat · 12 acres</div>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid var(--glass-border); border-radius: 12px; padding: 14px; margin-bottom: 10px;">
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 4px;">Next AI Analysis</div>
+          <div style="font-size: 0.9rem; font-weight: 500; color: var(--text-primary);">Tomorrow, 9:00 AM</div>
+        </div>
+
+        <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--glass-border);">
+          <a href="pricing.html" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 0.85rem;">Upgrade to Pro</a>
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="dash-main">
+
+        <!-- TOP STATS ROW -->
+        <div class="dash-top-row">
+          <div class="dash-stat-card">
+            <div class="dash-stat-label">🧪 Soil Health Score</div>
+            <div class="dash-stat-val">87</div>
+            <div class="dash-stat-change positive">↑ +4 this week</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-label">📈 Predicted Yield</div>
+            <div class="dash-stat-val">4.2T</div>
+            <div class="dash-stat-change positive">↑ Above average</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-label">🌡️ Today's Temp</div>
+            <div class="dash-stat-val">28°C</div>
+            <div class="dash-stat-change" style="color: var(--text-muted);">☀️ Sunny</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-label">🦠 Disease Risk</div>
+            <div class="dash-stat-val" style="color: var(--green-300); font-size: 1.4rem;">Low</div>
+            <div class="dash-stat-change positive">↓ -12% risk</div>
+          </div>
+        </div>
+
+        <!-- YIELD CHART + CROP RECS -->
+        <div class="dash-row">
+          <div class="dash-card">
+            <div class="dash-card-title">📈 Monthly Yield Forecast (tons/acre)</div>
+            <canvas id="yield-chart" style="width: 100%;"></canvas>
+            <div style="display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap;">
+              <div style="display: flex; align-items: center; gap: 6px; font-size: 0.72rem; color: var(--text-muted);"><div style="width: 12px; height: 3px; background: var(--green-400); border-radius: 2px;"></div> Yield (tons/acre)</div>
+            </div>
+          </div>
+
+          <div class="dash-card">
+            <div class="dash-card-title">🌾 Crop Recommendations</div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; align-items: center; gap: 10px; padding: 10px; background: rgba(39,174,96,0.08); border: 1px solid rgba(39,174,96,0.2); border-radius: 10px;">
+                <span style="font-size: 1.1rem;">🌾</span>
+                <div style="flex: 1;"><div style="font-size: 0.85rem; font-weight: 600; color: var(--white);">Wheat</div><div style="font-size: 0.7rem; color: var(--text-muted);">Best match</div></div>
+                <span style="font-size: 0.78rem; font-weight: 700; color: var(--green-300);">96%</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 10px; background: rgba(255,255,255,0.04); border: 1px solid var(--glass-border); border-radius: 10px;">
+                <span style="font-size: 1.1rem;">🌽</span>
+                <div style="flex: 1;"><div style="font-size: 0.85rem; font-weight: 600; color: var(--white);">Maize</div><div style="font-size: 0.7rem; color: var(--text-muted);">Good option</div></div>
+                <span style="font-size: 0.78rem; font-weight: 700; color: var(--green-200);">88%</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 10px; background: rgba(255,255,255,0.04); border: 1px solid var(--glass-border); border-radius: 10px;">
+                <span style="font-size: 1.1rem;">🌱</span>
+                <div style="flex: 1;"><div style="font-size: 0.85rem; font-weight: 600; color: var(--white);">Soybean</div><div style="font-size: 0.7rem; color: var(--text-muted);">Consider</div></div>
+                <span style="font-size: 0.78rem; font-weight: 700; color: var(--text-secondary);">79%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SOIL + DISEASE -->
+        <div class="dash-row">
+          <!-- Soil Analyzer -->
+          <div class="dash-card">
+            <div class="dash-card-title">🧪 Soil Analysis</div>
+            
+            <form id="soil-form" style="margin-bottom: 12px;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 12px;">
+                <div>
+                  <label style="font-size: 0.68rem; color: var(--text-muted);">Nitrogen (N)</label>
+                  <input type="number" class="form-input" placeholder="e.g. 45" style="padding: 8px 10px; font-size: 0.82rem; border-radius: 8px;" value="45">
+                </div>
+                <div>
+                  <label style="font-size: 0.68rem; color: var(--text-muted);">Phosphorus (P)</label>
+                  <input type="number" class="form-input" placeholder="e.g. 28" style="padding: 8px 10px; font-size: 0.82rem; border-radius: 8px;" value="28">
+                </div>
+                <div>
+                  <label style="font-size: 0.68rem; color: var(--text-muted);">Potassium (K)</label>
+                  <input type="number" class="form-input" placeholder="e.g. 62" style="padding: 8px 10px; font-size: 0.82rem; border-radius: 8px;" value="62">
+                </div>
+                <div>
+                  <label style="font-size: 0.68rem; color: var(--text-muted);">pH Level</label>
+                  <input type="number" class="form-input" placeholder="6.5" step="0.1" style="padding: 8px 10px; font-size: 0.82rem; border-radius: 8px;" value="6.8">
+                </div>
+                <div>
+                  <label style="font-size: 0.68rem; color: var(--text-muted);">Organic Carbon %</label>
+                  <input type="number" class="form-input" placeholder="1.2" step="0.1" style="padding: 8px 10px; font-size: 0.82rem; border-radius: 8px;" value="1.4">
+                </div>
+                <div>
+                  <label style="font-size: 0.68rem; color: var(--text-muted);">Moisture %</label>
+                  <input type="number" class="form-input" placeholder="42" style="padding: 8px 10px; font-size: 0.82rem; border-radius: 8px;" value="52">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center;">Analyze Soil →</button>
+            </form>
+
+            <div id="soil-result" style="display: none;"></div>
+
+            <!-- Current nutrient bars -->
+            <div style="margin-top: 14px;">
+              <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 10px; font-weight: 600;">Current Nutrient Levels</div>
+              <div class="progress-item">
+                <div class="progress-info"><span>Nitrogen</span><span>45 mg/kg</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="45%" style="width: 45%;"></div></div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-info"><span>Phosphorus</span><span>28 mg/kg</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="28%" style="width: 28%;"></div></div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-info"><span>Potassium</span><span>62 mg/kg</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="62%" style="width: 62%;"></div></div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-info"><span>Moisture</span><span>52%</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="52%" style="width: 52%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Disease Detection -->
+          <div class="dash-card">
+            <div class="dash-card-title">🔬 Disease Detection</div>
+            <div class="upload-widget ai-scan-container" style="margin-bottom: 12px;">
+              <div class="upload-icon">🍃</div>
+              <div class="upload-text">Click to upload leaf image<br><span style="font-size: 0.72rem; color: var(--text-muted);">JPG, PNG — max 5MB</span></div>
+            </div>
+            <input type="file" id="leaf-upload" accept="image/*" style="display: none;">
+            <div id="upload-result" style="display: none;"></div>
+
+            <div style="margin-top: 14px;">
+              <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 10px; font-weight: 600;">Recent Scan History</div>
+              <div style="display: flex; flex-direction: column; gap: 6px;">
+                <div style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background: rgba(39,174,96,0.06); border-radius: 8px; border: 1px solid rgba(39,174,96,0.12);">
+                  <span>✅</span>
+                  <div style="flex: 1;"><div style="font-size: 0.78rem; font-weight: 500; color: var(--text-primary);">Healthy — Wheat Leaf</div><div style="font-size: 0.65rem; color: var(--text-muted);">2 days ago</div></div>
+                  <span style="font-size: 0.72rem; color: var(--green-300);">98%</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; background: rgba(231,76,60,0.05); border-radius: 8px; border: 1px solid rgba(231,76,60,0.12);">
+                  <span>⚠️</span>
+                  <div style="flex: 1;"><div style="font-size: 0.78rem; font-weight: 500; color: var(--text-primary);">Early Blight — Tomato</div><div style="font-size: 0.65rem; color: var(--text-muted);">5 days ago · Treated</div></div>
+                  <span style="font-size: 0.72rem; color: #e74c3c;">94%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WEATHER WIDGET -->
+        <div class="dash-full dash-card">
+          <div class="dash-card-title">⛅ 7-Day Weather Forecast — Punjab</div>
+          <div id="weather-widget"></div>
+          <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--glass-border); display: flex; gap: 20px; flex-wrap: wrap;">
+            <div style="font-size: 0.82rem; color: var(--text-secondary);">💧 <strong>Humidity:</strong> 62%</div>
+            <div style="font-size: 0.82rem; color: var(--text-secondary);">🌬️ <strong>Wind:</strong> 12 km/h NW</div>
+            <div style="font-size: 0.82rem; color: var(--text-secondary);">🌧️ <strong>Rain Chance:</strong> 25% (Wed)</div>
+            <div style="font-size: 0.82rem; color: var(--text-secondary);">☀️ <strong>UV Index:</strong> 7 (High)</div>
+            <div style="font-size: 0.82rem; color: var(--green-200);">✅ <strong>Irrigation Recommendation:</strong> Skip Wednesday — natural rain expected</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="scroll-top" aria-label="Scroll to top">↑</button>
+<script src="js/script.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

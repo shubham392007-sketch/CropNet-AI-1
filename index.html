@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CropNet AI — AI-Powered Agriculture Intelligence</title>
+  <meta name="description" content="CropNet AI helps farmers make smarter decisions using artificial intelligence, soil analytics, disease detection, and yield prediction.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🌿</div>
+      CropNet <span>AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="technology.html">Technology</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="dashboard.html" class="btn btn-secondary btn-sm">Live Demo</a>
+      <a href="pricing.html" class="btn btn-primary btn-sm">Get Started</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<nav class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="technology.html">Technology</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="pricing.html" class="btn btn-primary" style="margin-top: 8px;">Get Started</a>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-grid-lines"></div>
+    <div class="particle-field"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Now in Public Beta — Trusted by 10,000+ Farmers
+        </div>
+
+        <h1 class="hero-title">
+          <span class="gradient-text">AI-Powered</span><br>
+          Intelligence for<br>
+          Modern Agriculture
+        </h1>
+
+        <p class="hero-subtitle">
+          CropNet AI helps farmers make smarter decisions using artificial intelligence, soil analytics, disease detection, and yield prediction — all in one platform.
+        </p>
+
+        <div class="hero-actions">
+          <a href="dashboard.html" class="btn btn-primary btn-lg">
+            🌱 Start Smart Farming
+          </a>
+          <a href="features.html" class="btn btn-secondary btn-lg">
+            Explore Features →
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">10K+</div>
+            <div class="hero-stat-label">Farmers Supported</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">95%</div>
+            <div class="hero-stat-label">Prediction Accuracy</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">50+</div>
+            <div class="hero-stat-label">AI Datasets</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-phone">
+          <!-- Floating badges -->
+          <div class="floating-icon fi-1">
+            <span class="fi-emoji">🛰️</span> Satellite Monitoring
+          </div>
+          <div class="floating-icon fi-2">
+            <span class="fi-emoji">✅</span> Soil Score: 87/100
+          </div>
+          <div class="floating-icon fi-3">
+            <span class="fi-emoji">🌧️</span> Rain Expected: 72%
+          </div>
+
+          <div class="hero-dashboard-mockup">
+            <div class="mockup-header">
+              <div class="mockup-dot"></div>
+              <div class="mockup-dot"></div>
+              <div class="mockup-dot"></div>
+              <div class="mockup-title">CropNet AI Dashboard</div>
+            </div>
+
+            <div class="mockup-grid">
+              <div class="mockup-card">
+                <div class="mockup-card-label">Soil Health</div>
+                <div class="mockup-card-value">87%</div>
+                <div class="mockup-card-change">↑ +4% this week</div>
+              </div>
+              <div class="mockup-card">
+                <div class="mockup-card-label">Predicted Yield</div>
+                <div class="mockup-card-value">4.2T</div>
+                <div class="mockup-card-change">↑ Above average</div>
+              </div>
+              <div class="mockup-card">
+                <div class="mockup-card-label">Moisture Level</div>
+                <div class="mockup-card-value">68%</div>
+                <div class="mockup-card-change">✓ Optimal</div>
+              </div>
+              <div class="mockup-card">
+                <div class="mockup-card-label">Disease Risk</div>
+                <div class="mockup-card-value">Low</div>
+                <div class="mockup-card-change">↓ -12% risk</div>
+              </div>
+            </div>
+
+            <div class="mockup-chart">
+              <div class="mockup-chart-title">Monthly Yield Forecast (tons/acre)</div>
+              <div class="chart-bars">
+                <div class="chart-bar" style="height: 45%"></div>
+                <div class="chart-bar" style="height: 60%"></div>
+                <div class="chart-bar" style="height: 52%"></div>
+                <div class="chart-bar" style="height: 75%"></div>
+                <div class="chart-bar" style="height: 68%"></div>
+                <div class="chart-bar" style="height: 85%"></div>
+                <div class="chart-bar" style="height: 78%"></div>
+                <div class="chart-bar" style="height: 92%"></div>
+              </div>
+            </div>
+
+            <div class="mockup-tags">
+              <span class="mockup-tag tag-green">🌾 Wheat Recommended</span>
+              <span class="mockup-tag tag-gold">⚠️ Irrigation Alert</span>
+              <span class="mockup-tag tag-earth">🌡️ 28°C Today</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS STRIP ── -->
+<section class="stats-section section-sm">
+  <div class="container">
+    <div class="stats-grid stagger-children">
+      <div class="stat-item">
+        <span class="stat-num" data-target="10000" data-suffix="+">0</span>
+        <div class="stat-label">Farmers Supported</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="500" data-suffix="+">0</span>
+        <div class="stat-label">Crop Analyses</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="95" data-suffix="%">0</span>
+        <div class="stat-label">Prediction Accuracy</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="50" data-suffix="+">0</span>
+        <div class="stat-label">Agricultural Datasets</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CORE AI FEATURES ── -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Core AI Engines</div>
+      <h2>Four Powerful AI Systems<br><span class="gradient-text">Working for Your Farm</span></h2>
+      <p>Each AI engine is trained on millions of real agricultural data points to deliver actionable insights for every farmer.</p>
+    </div>
+
+    <div class="features-grid stagger-children">
+
+      <!-- Soil Testing AI -->
+      <div class="feature-card glass-card">
+        <div class="feature-icon-wrap">🧪</div>
+        <h3>Soil Testing AI</h3>
+        <p>Deep analysis of soil composition to determine soil health and generate precision recommendations for optimal crop growth.</p>
+        <div class="feature-tags">
+          <span class="feature-tag">Nitrogen</span>
+          <span class="feature-tag">Phosphorus</span>
+          <span class="feature-tag">Potassium</span>
+          <span class="feature-tag">pH</span>
+          <span class="feature-tag">Organic Carbon</span>
+          <span class="feature-tag">Moisture</span>
+        </div>
+        <div style="background: rgba(39,174,96,0.06); border: 1px solid rgba(39,174,96,0.15); border-radius: 10px; padding: 12px; margin-bottom: 1.25rem;">
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.1em;">Outputs</div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <span style="font-size: 0.78rem; color: var(--green-200); font-weight: 500;">✓ Soil Health Score</span>
+            <span style="font-size: 0.78rem; color: var(--green-200); font-weight: 500;">✓ Fertilizer Recommendation</span>
+          </div>
+        </div>
+        <a href="features.html#soil" class="btn btn-outline btn-sm">Learn More →</a>
+      </div>
+
+      <!-- Crop Recommendation -->
+      <div class="feature-card glass-card">
+        <div class="feature-icon-wrap">🌾</div>
+        <h3>Crop Recommendation Engine</h3>
+        <p>Matches your soil profile and local climate data to recommend the most profitable and suitable crops for your region.</p>
+        <div class="feature-tags">
+          <span class="feature-tag">Soil Nutrients</span>
+          <span class="feature-tag">Rainfall</span>
+          <span class="feature-tag">Temperature</span>
+          <span class="feature-tag">Humidity</span>
+          <span class="feature-tag">Region</span>
+        </div>
+        <div style="background: rgba(39,174,96,0.06); border: 1px solid rgba(39,174,96,0.15); border-radius: 10px; padding: 12px; margin-bottom: 1.25rem;">
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.1em;">Outputs</div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <span style="font-size: 0.78rem; color: var(--green-200); font-weight: 500;">✓ Top 3 Recommended Crops</span>
+            <span style="font-size: 0.78rem; color: var(--green-200); font-weight: 500;">✓ Confidence Score</span>
+          </div>
+        </div>
+        <a href="features.html#crop" class="btn btn-outline btn-sm">Learn More →</a>
+      </div>
+
+      <!-- Disease Detection -->
+      <div class="feature-card glass-card">
+        <div class="feature-icon-wrap">🔬</div>
+        <h3>Disease Detection AI</h3>
+        <p>Upload a photo of a plant leaf and our computer vision model identifies diseases instantly with treatment recommendations.</p>
+        <div class="feature-tags">
+          <span class="feature-tag">Leaf Image Upload</span>
+          <span class="feature-tag">Computer Vision</span>
+          <span class="feature-tag">CNN Model</span>
+        </div>
+        <div style="background: rgba(39,174,96,0.06); border: 1px solid rgba(39,174,96,0.15); border-radius: 10px; padding: 12px; margin-bottom: 1.25rem;">
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.1em;">Outputs</div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <span style="font-size: 0.78rem; color: var(--green-200); font-weight: 500;">✓ Detected Disease</span>
+            <span style="font-size: 0.78rem; color: var(--green-200); font-weight: 500;">✓ Confidence Level</span>
+            <span style="font-size: 0.78rem; color: var(--green-200); font-weight: 500;">✓ Treatment Suggestion</span>
+          </div>
+        </div>
+        <a href="features.html#disease" class="btn btn-outline btn-sm">Learn More →</a>
+      </div>
+
+      <!-- Yield Prediction -->
+      <div class="feature-card glass-card">
+        <div class="feature-icon-wrap">📈</div>
+        <h3>Yield Prediction AI</h3>
+        <p>Uses multi-variable machine learning to forecast your crop production before harvest, so you can plan and optimize resources.</p>
+        <div class="feature-tags">
+          <span class="feature-tag">Crop Type</span>
+          <span class="feature-tag">Soil Parameters</span>
+          <span class="feature-tag">Weather Data</span>
+          <span class="feature-tag">Fertilizer Usage</span>
+          <span class="feature-tag">Irrigation</span>
+        </div>
+        <div style="background: rgba(39,174,96,0.06); border: 1px solid rgba(39,174,96,0.15); border-radius: 10px; padding: 12px; margin-bottom: 1.25rem;">
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.1em;">Outputs</div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <span style="font-size: 0.78rem; color: var(--green-200); font-weight: 500;">✓ Expected Yield (tons)</span>
+            <span style="font-size: 0.78rem; color: var(--green-200); font-weight: 500;">✓ Risk Score</span>
+          </div>
+        </div>
+        <a href="features.html#yield" class="btn btn-outline btn-sm">Learn More →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── ADVANCED FEATURES ── -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Smart Agriculture Tools</div>
+      <h2>More Intelligence,<br><span class="gradient-text">More Productivity</span></h2>
+      <p>Beyond the core AI engines, CropNet AI provides a full suite of precision agriculture tools.</p>
+    </div>
+
+    <div class="adv-features-grid stagger-children">
+      <div class="adv-card glass-card">
+        <div class="adv-icon">⛅</div>
+        <h4>Smart Weather Insights</h4>
+        <p>7-day forecasts, rain probability, frost alerts, and optimal planting windows powered by regional weather AI.</p>
+      </div>
+      <div class="adv-card glass-card">
+        <div class="adv-icon">🤖</div>
+        <h4>AI Farming Assistant</h4>
+        <p>Ask anything about your crops, get instant expert-level answers from our conversational agriculture AI chatbot.</p>
+      </div>
+      <div class="adv-card glass-card">
+        <div class="adv-icon">📊</div>
+        <h4>Farm Analytics Dashboard</h4>
+        <p>Visual analytics for soil trends, yield history, disease frequency, and financial performance of your farm.</p>
+      </div>
+      <div class="adv-card glass-card">
+        <div class="adv-icon">🛰️</div>
+        <h4>Satellite Crop Monitoring</h4>
+        <p>NDVI-based satellite imagery to track field health, spot irrigation issues, and monitor large-scale farms.</p>
+      </div>
+      <div class="adv-card glass-card">
+        <div class="adv-icon">🚨</div>
+        <h4>Regional Disease Alerts</h4>
+        <p>Get real-time alerts when disease outbreaks are detected in your region before they reach your fields.</p>
+      </div>
+      <div class="adv-card glass-card">
+        <div class="adv-icon">💧</div>
+        <h4>Smart Irrigation Guide</h4>
+        <p>AI-recommended irrigation schedules based on crop type, soil moisture, temperature, and forecast data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="section" style="background: rgba(13,43,18,0.3);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Farmer Success Stories</div>
+      <h2>Trusted by Farmers<br><span class="gradient-text">Across the Country</span></h2>
+    </div>
+
+    <div class="testimonials-grid stagger-children">
+      <div class="testimonial-card glass-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"CropNet AI's soil analysis saved my wheat crop this season. The fertilizer recommendations were spot-on — I saved ₹40,000 in wasted inputs and increased yield by 30%."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">👨‍🌾</div>
+          <div>
+            <div class="testimonial-name">Ramesh Kumar</div>
+            <div class="testimonial-loc">Wheat Farmer, Punjab</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card glass-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"The disease detection feature is like having a plant doctor in my pocket. I caught early blight on my tomatoes before it spread. This app literally saved my entire harvest."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">👩‍🌾</div>
+          <div>
+            <div class="testimonial-name">Priya Sharma</div>
+            <div class="testimonial-loc">Vegetable Farmer, Maharashtra</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card glass-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"We manage 500 acres of cotton. CropNet's satellite monitoring and yield prediction help us plan our entire logistics pipeline months in advance. Game changer for large farms."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">🧑‍💼</div>
+          <div>
+            <div class="testimonial-name">Vikram Aggarwal</div>
+            <div class="testimonial-loc">Agribusiness Owner, Gujarat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOUNDERS ── -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">The Team Behind CropNet AI</div>
+      <h2>Meet the<br><span class="gradient-text">Founders</span></h2>
+      <p>Built by a passionate team combining agriculture, AI, and business expertise to transform farming forever.</p>
+    </div>
+
+    <div class="team-grid stagger-children">
+      <div class="team-card glass-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #1a5226, #27ae60);">🚀</div>
+        <div class="team-role-badge">Captain · Team Leader</div>
+        <div class="team-name">Siddesh</div>
+        <p class="team-desc">Strategic vision and team leadership. Drives the product roadmap and ensures CropNet AI creates real value for farmers across India.</p>
+      </div>
+      <div class="team-card glass-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #0d2b12, #1e7a3c);">⚡</div>
+        <div class="team-role-badge">Technical Head · AI Lead</div>
+        <div class="team-name">Shubham</div>
+        <p class="team-desc">AI development and software architecture. Designs and builds the machine learning models and infrastructure powering CropNet AI.</p>
+      </div>
+      <div class="team-card glass-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #2c1a0e, #a0623a);">💼</div>
+        <div class="team-role-badge">Financial Head · Strategy</div>
+        <div class="team-name">Adarsh</div>
+        <p class="team-desc">Financial strategy, business planning, and investment management. Building sustainable growth and attracting the right partners.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-box reveal">
+      <div class="section-label" style="margin: 0 auto 1.5rem;">Ready to Transform Your Farm?</div>
+      <h2>Start Smart Farming<br><span class="gradient-text">with CropNet AI</span></h2>
+      <p>Join 10,000+ farmers already using AI to grow smarter, reduce costs, and increase yields every season.</p>
+      <div class="cta-actions">
+        <a href="dashboard.html" class="btn btn-primary btn-lg">🌱 Try CropNet AI</a>
+        <a href="technology.html" class="btn btn-secondary btn-lg">Explore Technology →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="display: inline-flex; margin-bottom: 0.75rem;">
+          <div class="nav-logo-icon">🌿</div>
+          CropNet <span>AI</span>
+        </a>
+        <p>Empowering farmers with artificial intelligence for smarter, more sustainable agriculture.</p>
+        <div class="footer-socials">
+          <button class="social-btn" title="Twitter">𝕏</button>
+          <button class="social-btn" title="LinkedIn">in</button>
+          <button class="social-btn" title="GitHub">⌥</button>
+          <button class="social-btn" title="YouTube">▶</button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Product</h5>
+        <ul class="footer-links">
+          <li><a href="features.html">Features</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul class="footer-links">
+          <li><a href="#">API Docs</a></li>
+          <li><a href="#">Farmer Guide</a></li>
+          <li><a href="#">Research Papers</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 CropNet AI. All rights reserved.</span>
+      <span>Built with 🌿 for farmers everywhere</span>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

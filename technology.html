@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology — CropNet AI</title>
+  <meta name="description" content="Explore the technical architecture, machine learning models, and data infrastructure powering CropNet AI.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🌿</div>
+      CropNet <span>AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="technology.html" class="active">Technology</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="dashboard.html" class="btn btn-secondary btn-sm">Live Demo</a>
+      <a href="pricing.html" class="btn btn-primary btn-sm">Get Started</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<nav class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="technology.html">Technology</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="pricing.html" class="btn btn-primary" style="margin-top: 8px;">Get Started</a>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1" style="opacity: 0.5;"></div>
+    <div class="hero-orb hero-orb-2" style="opacity: 0.4;"></div>
+  </div>
+  <div class="container" style="position: relative; z-index: 1;">
+    <div class="section-label">Under the Hood</div>
+    <h1>The Technology<br><span class="gradient-text">Powering CropNet AI</span></h1>
+    <p>Built on proven machine learning architectures, real-world agricultural data, and cloud-native infrastructure designed for scale and reliability.</p>
+  </div>
+</section>
+
+<!-- SYSTEM ARCHITECTURE -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">System Architecture</div>
+      <h2>How CropNet AI<br><span class="gradient-text">Processes Data</span></h2>
+      <p>A multi-layer architecture ensures fast, reliable, and accurate results for every query.</p>
+    </div>
+
+    <div class="arch-flow reveal">
+      <div class="arch-node">
+        <div class="arch-icon">📱</div>
+        <div class="arch-label">User App<br><span style="color: var(--text-muted); font-size: 0.65rem;">Web / Mobile</span></div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-node">
+        <div class="arch-icon">⚙️</div>
+        <div class="arch-label">REST API Layer<br><span style="color: var(--text-muted); font-size: 0.65rem;">FastAPI / Node.js</span></div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-node">
+        <div class="arch-icon">🧠</div>
+        <div class="arch-label">ML Engine<br><span style="color: var(--text-muted); font-size: 0.65rem;">Python / Scikit-learn</span></div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-node">
+        <div class="arch-icon">🗄️</div>
+        <div class="arch-label">Database<br><span style="color: var(--text-muted); font-size: 0.65rem;">PostgreSQL / Redis</span></div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-node">
+        <div class="arch-icon">☁️</div>
+        <div class="arch-label">Cloud Storage<br><span style="color: var(--text-muted); font-size: 0.65rem;">AWS S3 / GCP</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ML MODELS -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Machine Learning Models</div>
+      <h2>AI Models Built for<br><span class="gradient-text">Agriculture</span></h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 3rem;" class="stagger-children">
+
+      <div class="glass-card" style="padding: 2rem;">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 1.25rem;">
+          <div style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(39,174,96,0.2), rgba(39,174,96,0.05)); border: 1px solid rgba(39,174,96,0.25); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">🧪</div>
+          <div>
+            <h4>Soil Health Model</h4>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Random Forest Classifier</div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Algorithm</span><span style="color: var(--text-secondary);">Random Forest + XGBoost</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Training Samples</span><span style="color: var(--text-secondary);">2.4M soil records</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Accuracy</span><span style="color: var(--green-300); font-weight: 600;">94.2%</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Features</span><span style="color: var(--text-secondary);">12 soil parameters</span></div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 94%;"></div>
+        </div>
+        <div style="text-align: right; font-size: 0.72rem; color: var(--green-300); margin-top: 4px;">94.2% accuracy</div>
+      </div>
+
+      <div class="glass-card" style="padding: 2rem;">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 1.25rem;">
+          <div style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(39,174,96,0.2), rgba(39,174,96,0.05)); border: 1px solid rgba(39,174,96,0.25); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">🌾</div>
+          <div>
+            <h4>Crop Recommendation Model</h4>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Multi-Class Classifier</div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Algorithm</span><span style="color: var(--text-secondary);">Gradient Boosting + KNN</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Training Samples</span><span style="color: var(--text-secondary);">1.8M crop records</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Accuracy</span><span style="color: var(--green-300); font-weight: 600;">97.1%</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Crop Classes</span><span style="color: var(--text-secondary);">22 major crops</span></div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 97%;"></div>
+        </div>
+        <div style="text-align: right; font-size: 0.72rem; color: var(--green-300); margin-top: 4px;">97.1% accuracy</div>
+      </div>
+
+      <div class="glass-card" style="padding: 2rem;">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 1.25rem;">
+          <div style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(39,174,96,0.2), rgba(39,174,96,0.05)); border: 1px solid rgba(39,174,96,0.25); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">🔬</div>
+          <div>
+            <h4>Disease Detection Model</h4>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Convolutional Neural Network</div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Architecture</span><span style="color: var(--text-secondary);">ResNet-50 + Transfer Learning</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Training Images</span><span style="color: var(--text-secondary);">87,000+ leaf images</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Accuracy</span><span style="color: var(--green-300); font-weight: 600;">94.3%</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Disease Classes</span><span style="color: var(--text-secondary);">38 diseases</span></div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 94%;"></div>
+        </div>
+        <div style="text-align: right; font-size: 0.72rem; color: var(--green-300); margin-top: 4px;">94.3% accuracy</div>
+      </div>
+
+      <div class="glass-card" style="padding: 2rem;">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 1.25rem;">
+          <div style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(39,174,96,0.2), rgba(39,174,96,0.05)); border: 1px solid rgba(39,174,96,0.25); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">📈</div>
+          <div>
+            <h4>Yield Prediction Model</h4>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Regression Ensemble</div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Algorithm</span><span style="color: var(--text-secondary);">Random Forest Regressor</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Training Records</span><span style="color: var(--text-secondary);">5M+ farm yield records</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">R² Score</span><span style="color: var(--green-300); font-weight: 600;">0.91</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.82rem;"><span style="color: var(--text-muted);">Features</span><span style="color: var(--text-secondary);">14 input variables</span></div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 91%;"></div>
+        </div>
+        <div style="text-align: right; font-size: 0.72rem; color: var(--green-300); margin-top: 4px;">R² = 0.91</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI PIPELINE -->
+<section class="section" style="padding-top: 0; background: rgba(13,43,18,0.3);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">AI Pipeline</div>
+      <h2>From Raw Data to<br><span class="gradient-text">Actionable Insight</span></h2>
+      <p>Every AI model follows a rigorous machine learning pipeline to ensure accuracy, reliability, and continuous improvement.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;" class="reveal">
+      <div class="pipeline">
+        <div class="pipeline-step glass-card">
+          <div class="pipeline-step-num">1</div>
+          <div class="pipeline-step-content">
+            <h4>Raw Data Collection</h4>
+            <p>Agricultural data gathered from IoT sensors, satellite imagery, government databases, and farmer reports across 50+ datasets.</p>
+          </div>
+        </div>
+        <div class="pipeline-connector"></div>
+        <div class="pipeline-step glass-card">
+          <div class="pipeline-step-num">2</div>
+          <div class="pipeline-step-content">
+            <h4>Data Cleaning & Validation</h4>
+            <p>Automated pipelines remove outliers, fill missing values, and validate data integrity using domain-specific agricultural rules.</p>
+          </div>
+        </div>
+        <div class="pipeline-connector"></div>
+        <div class="pipeline-step glass-card">
+          <div class="pipeline-step-num">3</div>
+          <div class="pipeline-step-content">
+            <h4>Feature Engineering</h4>
+            <p>Domain experts identify key predictive features. Derived variables like NPK ratios, climate indices, and seasonal factors are computed.</p>
+          </div>
+        </div>
+        <div class="pipeline-connector"></div>
+        <div class="pipeline-step glass-card">
+          <div class="pipeline-step-num">4</div>
+          <div class="pipeline-step-content">
+            <h4>Model Training</h4>
+            <p>Ensemble models trained with cross-validation and hyperparameter tuning. Distributed training on cloud GPUs for deep learning models.</p>
+          </div>
+        </div>
+        <div class="pipeline-connector"></div>
+        <div class="pipeline-step glass-card">
+          <div class="pipeline-step-num">5</div>
+          <div class="pipeline-step-content">
+            <h4>Model Evaluation</h4>
+            <p>Rigorous testing on held-out datasets. A/B testing against baseline models. Human expert review of edge cases.</p>
+          </div>
+        </div>
+        <div class="pipeline-connector"></div>
+        <div class="pipeline-step glass-card">
+          <div class="pipeline-step-num">6</div>
+          <div class="pipeline-step-content">
+            <h4>Deployment & Monitoring</h4>
+            <p>Blue-green deployments with automated rollback. Real-time model drift detection and continuous retraining pipelines.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="glass-card" style="padding: 2rem; margin-bottom: 1.25rem;">
+          <h4 style="margin-bottom: 1rem;">Data Sources</h4>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span style="font-size: 1.1rem;">🛰️</span>
+              <div><div style="font-size: 0.88rem; font-weight: 500; color: var(--text-primary);">Satellite Imagery</div><div style="font-size: 0.75rem; color: var(--text-muted);">Landsat 8, Sentinel-2, MODIS</div></div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span style="font-size: 1.1rem;">🌦️</span>
+              <div><div style="font-size: 0.88rem; font-weight: 500; color: var(--text-primary);">Weather Data</div><div style="font-size: 0.75rem; color: var(--text-muted);">IMD, OpenWeatherMap, ECMWF</div></div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span style="font-size: 1.1rem;">🏛️</span>
+              <div><div style="font-size: 0.88rem; font-weight: 500; color: var(--text-primary);">Government Records</div><div style="font-size: 0.75rem; color: var(--text-muted);">ICAR, FAO, State Agricultural Depts</div></div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span style="font-size: 1.1rem;">📡</span>
+              <div><div style="font-size: 0.88rem; font-weight: 500; color: var(--text-primary);">IoT Sensors</div><div style="font-size: 0.75rem; color: var(--text-muted);">Soil moisture, pH, temperature probes</div></div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span style="font-size: 1.1rem;">👨‍🌾</span>
+              <div><div style="font-size: 0.88rem; font-weight: 500; color: var(--text-primary);">Farmer Reports</div><div style="font-size: 0.75rem; color: var(--text-muted);">Crowdsourced yield and disease data</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card" style="padding: 2rem;">
+          <h4 style="margin-bottom: 1rem;">Cloud Infrastructure</h4>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div style="padding: 12px; background: rgba(255,255,255,0.04); border-radius: 10px; border: 1px solid var(--glass-border); text-align: center;">
+              <div style="font-size: 1.3rem; margin-bottom: 4px;">☁️</div>
+              <div style="font-size: 0.78rem; color: var(--text-secondary); font-weight: 500;">AWS EC2</div>
+              <div style="font-size: 0.65rem; color: var(--text-muted);">Model Serving</div>
+            </div>
+            <div style="padding: 12px; background: rgba(255,255,255,0.04); border-radius: 10px; border: 1px solid var(--glass-border); text-align: center;">
+              <div style="font-size: 1.3rem; margin-bottom: 4px;">🗄️</div>
+              <div style="font-size: 0.78rem; color: var(--text-secondary); font-weight: 500;">PostgreSQL</div>
+              <div style="font-size: 0.65rem; color: var(--text-muted);">Primary Database</div>
+            </div>
+            <div style="padding: 12px; background: rgba(255,255,255,0.04); border-radius: 10px; border: 1px solid var(--glass-border); text-align: center;">
+              <div style="font-size: 1.3rem; margin-bottom: 4px;">⚡</div>
+              <div style="font-size: 0.78rem; color: var(--text-secondary); font-weight: 500;">Redis Cache</div>
+              <div style="font-size: 0.65rem; color: var(--text-muted);">Real-time Results</div>
+            </div>
+            <div style="padding: 12px; background: rgba(255,255,255,0.04); border-radius: 10px; border: 1px solid var(--glass-border); text-align: center;">
+              <div style="font-size: 1.3rem; margin-bottom: 4px;">📦</div>
+              <div style="font-size: 0.78rem; color: var(--text-secondary); font-weight: 500;">S3 Storage</div>
+              <div style="font-size: 0.65rem; color: var(--text-muted);">Images & Models</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-box reveal">
+      <div class="section-label" style="margin: 0 auto 1.5rem;">Built with Production-Grade AI</div>
+      <h2>Ready to Experience<br><span class="gradient-text">AI-Powered Farming?</span></h2>
+      <p>Try CropNet AI free and see the technology work on your real farm data.</p>
+      <div class="cta-actions">
+        <a href="dashboard.html" class="btn btn-primary btn-lg">🧠 Try the AI</a>
+        <a href="pricing.html" class="btn btn-secondary btn-lg">View Plans →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="display: inline-flex; margin-bottom: 0.75rem;">
+          <div class="nav-logo-icon">🌿</div>
+          CropNet <span>AI</span>
+        </a>
+        <p>Empowering farmers with AI for smarter, sustainable agriculture.</p>
+        <div class="footer-socials">
+          <button class="social-btn">𝕏</button>
+          <button class="social-btn">in</button>
+          <button class="social-btn">⌥</button>
+          <button class="social-btn">▶</button>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Product</h5><ul class="footer-links"><li><a href="features.html">Features</a></li><li><a href="technology.html">Technology</a></li><li><a href="dashboard.html">Dashboard</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="#">Blog</a></li><li><a href="#">Careers</a></li></ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul class="footer-links"><li><a href="#">API Docs</a></li><li><a href="#">Farmer Guide</a></li><li><a href="#">Research</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 CropNet AI. All rights reserved.</span>
+      <span>Built with 🌿 for farmers everywhere</span>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Scroll to top">↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>
